@@ -8,9 +8,9 @@
       <meta http-equiv="pragma" content="no-cache">
       <meta http-equiv="Cache-Control" content="no-cache">
      
-      <noscript></noscript><script type="text/javascript" src="mod_k-factory.js"></script>  
-      <script type="text/javascript" src="fnc_main_v3.js"></script>
-      <script type="text/javascript" src="aa.js"></script>
+      <noscript></noscript><script type="text/javascript" src="/home/jan/Dropbox/py/sorter_js/mod_k-factory.js"></script>  
+      <script type="text/javascript" src="/home/jan/Dropbox/py/sorter_js/fnc_main_v3.js"></script>
+      <script type="text/javascript" src="/home/jan/Dropbox/py/sorter_js/aa.js"></script>
      
     <title>Ace Attorney character sorter</title>
       <style type="text/css">
