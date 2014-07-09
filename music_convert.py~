@@ -1,4 +1,8 @@
- Phoenix Wright
+# convert list into js 'hard code' (see aa_2.js)
+# not needed to run the program, just a reference (xjcl)
+
+music = \
+""" Phoenix Wright
 01. Phoenix Wright: Ace Attorney - Prologue
 02. Courtroom Lounge ~ Opening Prelude
 03. Phoenix Wright: Ace Attorney - Court Begins
@@ -396,4 +400,27 @@
 3D27. The Light of Truth
 3D28. Prelude
 3D29. Denouement
-3D30. Professor Layton vs Phoenix Wright: Ace Attorney ~ Ending Theme
+3D30. Professor Layton vs Phoenix Wright: Ace Attorney ~ Ending Theme"""
+
+music = music.split("\n")
+output = ""
+
+i = -1
+for m in music:
+    for j, char in enumerate(m):
+        # titles use both " and ' -> _single_ backspaces needed
+        if char == '"':
+            m = m[:j] + '\\' + m[j:]
+    if m.startswith(' '):
+        i += 1
+    else:
+        output += '[1, '
+        output += '"' + m[0:] + '", '
+        a = [0,0,0,0,0,0,0,0]
+        a[i] = 1
+        output += str(a) + "],\n"
+
+print(output) # use with pipes! "python3 music_convert.py > results"
+
+
+
